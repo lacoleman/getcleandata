@@ -13,53 +13,53 @@ DATA FILES
 
 The data used are stored in the following files and folders (within the unzipped file):
 
-activity_labels.txt         matches the number codes for the activities with their names
-features.txt                lists the names of the column variables
-test/subject_test.txt       provides the corresponding subject ID for each row of the test data set
-test/X_text.txt             contains the test data set
-test/y_test.txt             provides the corresponding activity number for each row of the test data set
-train/subject_train.txt     provides the corresponding subject ID for each row of the training data set
-train/X_train.txt           contains the training data set
-train/y_train.txt           provides the corresponding activity number for each row of the training data set
+activity_labels.txt         matches the number codes for the activities with their names  
+features.txt                lists the names of the column variables  
+test/subject_test.txt       provides the corresponding subject ID for each row of the test data set  
+test/X_text.txt             contains the test data set  
+test/y_test.txt             provides the corresponding activity number for each row of the test data set  
+train/subject_train.txt     provides the corresponding subject ID for each row of the training data set  
+train/X_train.txt           contains the training data set  
+train/y_train.txt           provides the corresponding activity number for each row of the training data set  
 
 ==============================================================================================================
 VARIABLES
 
-t                   data as a function of time
-f                   data as a function of frequency (Fourier-transformed)
-Acc                 (linear) acceleration
-Gyro                gyroscopic (angular) velocity
-Mag                 magnitude
--mean()             mean of variable
--std()              standard deviation of variable
--XYZ                in the X, Y or Z axial plane
+t                   data as a function of time  
+f                   data as a function of frequency (Fourier-transformed)  
+Acc                 (linear) acceleration  
+Gyro                gyroscopic (angular) velocity  
+Mag                 magnitude  
+-mean()             mean of variable  
+-std()              standard deviation of variable  
+-XYZ                in the X, Y or Z axial plane  
 
-tBodyAcc-XYZ        body linear acceleration in the X/Y/Z plane over time
-tGravityAcc-XYZ     gravitational linear acceleration in the X/Y/Z plane over time
-tBodyAccJerk-XYZ    body jerk acceleration in the X/Y/Z plane over time
-tBodyGyro-XYZ       body gyroscopic angular velocity in the X/Y/Z plane over time
-tBodyGyroJerk-XYZ   body gyroscopic jerk velocity in the X/Y/Z plane over time
-tBodyAccMag         magnitude of body linear acceleration over time
-tGravityAccMag      magnitude of gravitational linear acceleration over time
-tBodyAccJerkMag     magnitude of body jerk acceleration over time
-tBodyGyroMag        magnitude of body gyroscopic angular velocity over time
-tBodyGyroJerkMag    magnitude of body gyroscopic jerk velocity over time
-fBodyAcc-XYZ        body linear acceleration in the X/Y/Z plane over frequency
-fBodyAccJerk-XYZ    body jerk acceleration in the X/Y/Z plane over frequency
-fBodyGyro-XYZ       body gyroscopic angular velocity in the X/Y/Z plane over frequency
-fBodyAccMag         magnitude of body linear acceleration over frequency
-fBodyAccJerkMag     magnitude of body jerk acceleration over frequency
-fBodyGyroMag        magnitude of body gyroscopic angular velocity over frequency
-fBodyGyroJerkMag    magnitude of body gyroscopic jerk velocity over frequency
+tBodyAcc-XYZ        body linear acceleration in the X/Y/Z plane over time  
+tGravityAcc-XYZ     gravitational linear acceleration in the X/Y/Z plane over time  
+tBodyAccJerk-XYZ    body jerk acceleration in the X/Y/Z plane over time  
+tBodyGyro-XYZ       body gyroscopic angular velocity in the X/Y/Z plane over time  
+tBodyGyroJerk-XYZ   body gyroscopic jerk velocity in the X/Y/Z plane over time  
+tBodyAccMag         magnitude of body linear acceleration over time  
+tGravityAccMag      magnitude of gravitational linear acceleration over time  
+tBodyAccJerkMag     magnitude of body jerk acceleration over time  
+tBodyGyroMag        magnitude of body gyroscopic angular velocity over time  
+tBodyGyroJerkMag    magnitude of body gyroscopic jerk velocity over time  
+fBodyAcc-XYZ        body linear acceleration in the X/Y/Z plane over frequency  
+fBodyAccJerk-XYZ    body jerk acceleration in the X/Y/Z plane over frequency  
+fBodyGyro-XYZ       body gyroscopic angular velocity in the X/Y/Z plane over frequency  
+fBodyAccMag         magnitude of body linear acceleration over frequency  
+fBodyAccJerkMag     magnitude of body jerk acceleration over frequency  
+fBodyGyroMag        magnitude of body gyroscopic angular velocity over frequency  
+fBodyGyroJerkMag    magnitude of body gyroscopic jerk velocity over frequency  
 
 ==============================================================================================================
 TRANSFORMATIONS
 
 run_analysis.R was run on the data, during which:
 Columns were subsetted to just the means and standard deviations (variables ending in either "mean()" or 
-"std()").
-Number codes for the activities were converted to names eg. 1 -> Walking.
+"std()").  
+Number codes for the activities were converted to names eg. 1 -> Walking.  
 Averages were calculated for each variable for each subject performing each
-activity ie. Subject 1, Walking, average mean body linear acceleration in the X plane over time
-             Subject 1, Walking, average mean body linear acceleration in the Y plane over time
+activity ie. Subject 1, Walking, average mean body linear acceleration in the X plane over time  
+             Subject 1, Walking, average mean body linear acceleration in the Y plane over time  
 and so on.
