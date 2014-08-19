@@ -1,9 +1,11 @@
 This repo contains the following scripts:  
+
 run_analysis.R
 
 run_analysis.R requires the reshape2 R package.
 
 In order, run_analysis.R:  
+
 1. Reads in all the .txt files required and merges them into one data frame  
 2. Subsets the data to only include the mean and standard deviation columns for each variable.  
 3. Converts the number codes for the activities to the names of the activities.  
