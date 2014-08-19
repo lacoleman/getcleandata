@@ -56,10 +56,11 @@ fBodyGyroJerkMag    magnitude of body gyroscopic jerk velocity over frequency
 TRANSFORMATIONS
 
 run_analysis.R was run on the data, during which:
+
 Columns were subsetted to just the means and standard deviations (variables ending in either "mean()" or 
 "std()").  
 Number codes for the activities were converted to names eg. 1 -> Walking.  
-Averages were calculated for each variable for each subject performing each
-activity ie. Subject 1, Walking, average mean body linear acceleration in the X plane over time  
-             Subject 1, Walking, average mean body linear acceleration in the Y plane over time  
+Averages were calculated for each variable for each subject performing each activity  
+ie. Subject 1, Walking, average mean body linear acceleration in the X plane over time  
+    Subject 1, Walking, average mean body linear acceleration in the Y plane over time  
 and so on.
